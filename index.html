@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -49,6 +51,12 @@
                     <i class="fa-brands fa-whatsapp"></i> PLANTÃO 24H - FALAR COM ADVOGADO
                 </a>
             </div>
+        </div>
+        <!-- Shape Divider Elementor Style -->
+        <div class="custom-shape-divider-bottom-hero">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,115.17,192.1,98.67,243.68,84.74,286.3,63,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
     </section>
 
@@ -151,12 +159,31 @@
                 </div>
             </div>
             
-            <div class="testimonials" data-aos="fade-up" data-aos-delay="400">
-                <div class="testimonial-card">
-                    <i class="fa-solid fa-quote-left quote-icon"></i>
-                    <p>"Profissionalismo impecável. Conseguiu reverter uma situação extremamente complexa com uma agilidade impressionante. A transparência no processo me deu muita tranquilidade."</p>
-                    <div class="testimonial-author">- Cliente Protegido, Palmas-TO</div>
+            <div class="testimonials swiper mySwiper" data-aos="fade-up" data-aos-delay="400">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"Profissionalismo impecável. Conseguiu reverter uma situação extremamente complexa com uma agilidade impressionante. A transparência no processo me deu muita tranquilidade."</p>
+                            <div class="testimonial-author">- João M., Empresário, Palmas-TO</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"Atendimento no meio da noite com total disposição. A audiência de custódia foi um sucesso graças à estratégia rápida e incisiva da equipe de criminalistas."</p>
+                            <div class="testimonial-author">- Carlos F., Palmas-TO</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"Me senti protegido desde o primeiro contato. Eles não apenas me defenderam tecnicamente, mas deram todo o suporte humano que eu precisava nesse momento difícil."</p>
+                            <div class="testimonial-author">- Ricardo S., Porto Nacional-TO</div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -172,6 +199,7 @@
                     <p><i class="fa-solid fa-phone"></i> (63) 99999-9999</p>
                     <p><i class="fa-solid fa-envelope"></i> contato@protegocriminal.com.br</p>
                 </div>
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&fm=webp" alt="Advogado Especialista em Direito Criminal em Palmas TO analisando um processo com confiança" class="contact-image" loading="lazy">
             </div>
             <div class="contact-form-wrapper" data-aos="fade-left">
                 <form class="triagem-form" action="#" method="POST">
@@ -233,6 +261,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 </html>

@@ -70,4 +70,26 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('lgpd_accepted', 'true');
         });
     }
+
+    // 5. Iniciar Swiper (Carrossel de Depoimentos)
+    if(typeof Swiper !== 'undefined') {
+        new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    }
 });

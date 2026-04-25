@@ -223,6 +223,26 @@ p {
     font-weight: 400;
 }
 
+/* Shape Divider Elementor Style */
+.custom-shape-divider-bottom-hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+}
+.custom-shape-divider-bottom-hero svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+.custom-shape-divider-bottom-hero .shape-fill {
+    fill: var(--bg-light); /* Matching next section color if changed, or white */
+}
+
 /* Urgency Bar */
 .urgency-bar {
     background-color: var(--gold);
@@ -470,6 +490,24 @@ p {
     color: var(--navy);
 }
 
+/* Swiper Overrides */
+.swiper {
+    width: 100%;
+    padding-bottom: 50px !important;
+}
+.swiper-slide {
+    height: auto;
+}
+.testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--gold) !important;
+}
+
 /* Contact & Triagem */
 .contact-section {
     padding: 100px 0;
@@ -503,6 +541,15 @@ p {
     font-size: 1.3rem;
     width: 25px;
     text-align: center;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-bottom: 4px solid var(--gold);
 }
 
 .contact-form-wrapper {
